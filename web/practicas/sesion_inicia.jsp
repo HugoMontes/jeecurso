@@ -13,11 +13,12 @@
     // Obtener utlimo tiempo de acceso de esta pagina
     Date lastAccessTime = new Date(session.getLastAccessedTime());
 
+    // Inicializar variables
     String title = "Gracias por permanecer en mi sitio web";
-    Integer visitCount = new Integer(0);
-    String visitCountKey = new String("visitCount");
-    String userIDKey = new String("userID");
-    String userID = new String("ABCD");
+    Integer visitCount = 0;
+    String visitCountKey = "visitCount";
+    String userIDKey = "userID";
+    String userID = "ABCD";
 
     // Compruebar si es una nueva sesion en la página
     if (session.isNew()) {
@@ -42,7 +43,7 @@
             <h2><%= title%></h2>
         </div>
         <table border = "1" align = "center"> 
-            <tr bgcolor = "#949494">
+            <tr bgcolor = "grey">
                 <th>Session info</th>
                 <th>Valores</th>
             </tr> 
