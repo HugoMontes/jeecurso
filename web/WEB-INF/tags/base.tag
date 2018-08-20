@@ -5,7 +5,7 @@
 --%>
 
 <%@tag description="Platilla base" pageEncoding="UTF-8"%>
-
+<%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%-- Atributos de la plantilla --%>
 <%@attribute name="title"%>
 
@@ -19,13 +19,13 @@
         <meta name="author" content="">
         <title>${title}</title>
         <!-- Bootstrap Core CSS -->
-        <link href="resources/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+        <link href="${pageContext.servletContext.contextPath}/resources/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
         <!-- MetisMenu CSS -->
-        <link href="resources/vendor/metisMenu/metisMenu.min.css" rel="stylesheet">
+        <link href="${pageContext.servletContext.contextPath}/resources/vendor/metisMenu/metisMenu.min.css" rel="stylesheet">
         <!-- Custom CSS -->
-        <link href="resources/dist/css/sb-admin-2.css" rel="stylesheet">
+        <link href="${pageContext.servletContext.contextPath}/resources/dist/css/sb-admin-2.css" rel="stylesheet">
         <!-- Custom Fonts -->
-        <link href="resources/vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+        <link href="${pageContext.servletContext.contextPath}/resources/vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
     </head>
 
     <body>
@@ -69,12 +69,12 @@
         </div>
         <!-- /#wrapper -->
         <!-- jQuery -->
-        <script src="resources/vendor/jquery/jquery.min.js"></script>
+        <script src="${pageContext.servletContext.contextPath}/resources/vendor/jquery/jquery.min.js"></script>
         <!-- Bootstrap Core JavaScript -->
-        <script src="resources/vendor/bootstrap/js/bootstrap.min.js"></script>
+        <script src="${pageContext.servletContext.contextPath}/resources/vendor/bootstrap/js/bootstrap.min.js"></script>
         <!-- Metis Menu Plugin JavaScript -->
-        <script src="resources/vendor/metisMenu/metisMenu.min.js"></script>
+        <script src="${pageContext.servletContext.contextPath}/resources/vendor/metisMenu/metisMenu.min.js"></script>
         <!-- Custom Theme JavaScript -->
-        <script src="resources/dist/js/sb-admin-2.js"></script>
+        <script src="${pageContext.servletContext.contextPath}/resources/dist/js/sb-admin-2.js"></script>
     </body>
 </html>
